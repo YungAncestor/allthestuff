@@ -1,0 +1,11 @@
+C:\Users\wallker\source\repos\ficha\ficha\bin\Debug\ficha.exe.config
+C:\Users\wallker\source\repos\ficha\ficha\bin\Debug\ficha.exe
+C:\Users\wallker\source\repos\ficha\ficha\bin\Debug\ficha.pdb
+C:\Users\wallker\source\repos\ficha\ficha\bin\Debug\ficha.xml
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.vbprojResolveAssemblyReference.cache
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.Resources.resources
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.vbproj.GenerateResource.Cache
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.vbproj.CoreCompileInputs.cache
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.exe
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.xml
+C:\Users\wallker\source\repos\ficha\ficha\obj\Debug\ficha.pdb

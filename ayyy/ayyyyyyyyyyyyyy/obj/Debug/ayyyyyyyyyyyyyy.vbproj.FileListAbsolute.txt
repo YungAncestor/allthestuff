@@ -1,0 +1,10 @@
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\Debug\ayyyyyyyyyyyyyy.exe.config
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\Debug\ayyyyyyyyyyyyyy.exe
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\Debug\ayyyyyyyyyyyyyy.pdb
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\Debug\ayyyyyyyyyyyyyy.xml
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\Debug\ayyyyyyyyyyyyyy.Resources.resources
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\Debug\ayyyyyyyyyyyyyy.vbproj.GenerateResource.Cache
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\Debug\ayyyyyyyyyyyyyy.vbproj.CoreCompileInputs.cache
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\Debug\ayyyyyyyyyyyyyy.exe
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\Debug\ayyyyyyyyyyyyyy.xml
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\Debug\ayyyyyyyyyyyyyy.pdb

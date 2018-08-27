@@ -1,0 +1,10 @@
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\x64\Release\ayyy.exe.config
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\x64\Release\ayyy.exe
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\x64\Release\ayyy.pdb
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\bin\x64\Release\ayyy.xml
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\x64\Release\ayyy.Resources.resources
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\x64\Release\ayyy.vbproj.GenerateResource.Cache
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\x64\Release\ayyy.vbproj.CoreCompileInputs.cache
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\x64\Release\ayyy.exe
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\x64\Release\ayyy.xml
+C:\Users\wallker\source\repos\ayyyyyyyyyyyyyy\ayyyyyyyyyyyyyy\obj\x64\Release\ayyy.pdb
