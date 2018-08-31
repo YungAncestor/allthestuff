@@ -2,7 +2,6 @@ C:\Users\wallker\source\repos\crpg\ficha\bin\x64\Release\crpg.exe.config
 C:\Users\wallker\source\repos\crpg\ficha\bin\x64\Release\crpg.exe
 C:\Users\wallker\source\repos\crpg\ficha\bin\x64\Release\crpg.pdb
 C:\Users\wallker\source\repos\crpg\ficha\bin\x64\Release\crpg.xml
-C:\Users\wallker\source\repos\crpg\ficha\obj\x64\Release\crpg.Form1.resources
 C:\Users\wallker\source\repos\crpg\ficha\obj\x64\Release\crpg.Resources.resources
 C:\Users\wallker\source\repos\crpg\ficha\obj\x64\Release\crpg.vbproj.GenerateResource.Cache
 C:\Users\wallker\source\repos\crpg\ficha\obj\x64\Release\crpg.vbproj.CoreCompileInputs.cache

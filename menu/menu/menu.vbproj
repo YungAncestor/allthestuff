@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{268A1B82-A6E9-4CD8-BFAE-073B3EF8B362}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>menu.Module1</StartupObject>
+    <StartupObject>menu.main</StartupObject>
     <RootNamespace>menu</RootNamespace>
     <AssemblyName>menu</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,7 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsValue.vb" />
-    <Compile Include="Module1.vb" />
+    <Compile Include="funct.vb" />
+    <Compile Include="functions.vb" />
+    <Compile Include="main.vb" />
+    <Compile Include="menu.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -85,6 +88,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="options.vb" />
+    <Compile Include="regedit.vb" />
+    <Compile Include="switchs.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

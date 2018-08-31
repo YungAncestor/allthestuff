@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clsPerson xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>wallker</name>
+  <hpt>22108</hpt>
+  <hpa>22073</hpa>
+  <level>13</level>
+  <faith>15</faith>
+  <city>kyoto</city>
+  <forca>12</forca>
+  <con>14</con>
+  <des>15</des>
+  <agi>10</agi>
+  <int>14</int>
+  <will>15</will>
+  <per>15</per>
+  <car>6</car>
+  <idade>666</idade>
+  <xpt>409600</xpt>
+  <xpa>304396</xpa>
+  <dano>2454</dano>
+  <danototal>2511</danototal>
+  <heal>2508</heal>
+  <cash>4201</cash>
+  <mhpt>113047</mhpt>
+  <mhpa>95514</mhpa>
+  <mdmg>2528</mdmg>
+</clsPerson>

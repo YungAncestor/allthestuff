@@ -9,10 +9,9 @@ Imports System.Collections
 Imports System.ComponentModel
 Imports System.String
 
-
 Module Module1
 
-    Dim fdir = "D:\Everything\new\"
+    Public fdir = "D:\Everything\new\"
 
     Function FileExists(FilePath As String) As Boolean
         Dim TestStr As String
@@ -33,131 +32,6 @@ Module Module1
         Return files(random.Next(0, files.Length - 1))
     End Function
 
-    Function md5f(ByVal Filename As String) As String
-
-        Dim MD5 = System.Security.Cryptography.MD5.Create
-        Dim Hash As Byte()
-        Dim sb As New System.Text.StringBuilder
-
-        Using st As New IO.FileStream(Filename, IO.FileMode.Open, IO.FileAccess.Read, IO.FileShare.Read)
-            Hash = MD5.ComputeHash(st)
-        End Using
-
-        For Each b In Hash
-            sb.Append(b.ToString("X2"))
-        Next
-
-        Return sb.ToString
-    End Function
-
-
-    Function rand(ini, fin) As String
-        Dim s As String = "abcdefghijklmnopqrstuvwxyz0123456789"
-        Dim r As New Random()
-        Dim sb As New System.Text.StringBuilder
-
-        For i As Integer = ini To fin
-            Dim idx As Integer = r.Next(0, 35)
-            sb.Append(s.Substring(idx, 1))
-        Next
-
-        Return sb.ToString
-    End Function
-
-    Function hash()
-        Dim searchPattern As String = "*.*"
-        For Each fileName As String In Directory.GetFiles(fdir, searchPattern, SearchOption.AllDirectories)
-            Dim md5String = md5f(fileName)
-
-            If FileExists(fdir + md5String + ".jpg") = True Then
-                Do
-                    md5String += rand(0, 8)
-                Loop Until FileExists(fdir + md5String + ".jpg") = False
-            End If
-
-            Dim newfn = Path.Combine(fdir, md5String & ".jpg")
-
-            Try
-                File.Move(Path.Combine(fdir, fileName), newfn)
-
-            Catch ex As Exception
-                Console.Write(ex)
-                Console.ReadLine()
-                'System.Threading.Thread.Sleep(1000)
-
-            End Try
-            Console.WriteLine(vbCrLf + $"renamed: [ {fileName} ] > [ {newfn} ]")
-        Next
-        Console.WriteLine("done")
-        System.Threading.Thread.Sleep(1000)
-
-        main1()
-    End Function
-
-    Function random()
-        Dim searchPattern As String = "*.*"
-        Dim i As Integer = 0
-        For Each fileName As String In Directory.GetFiles(fdir, searchPattern, SearchOption.AllDirectories)
-            Dim str = rand(0, 20)
-
-            If FileExists(fdir + str + ".jpg") = True Then
-                Do
-                    str = rand(0, 20)
-                Loop Until FileExists(fdir + str + ".jpg") = False
-            End If
-
-            Dim newfn = Path.Combine(fdir, str & ".jpg")
-
-            Try
-                File.Move(Path.Combine(fdir, fileName), newfn)
-
-            Catch ex As Exception
-                Console.Write(ex)
-                Console.ReadLine()
-                'System.Threading.Thread.Sleep(1000)
-
-            End Try
-            i += 1
-            Console.WriteLine(vbCrLf + $"renamed[{i}]: [ {fileName} ] > [ {newfn} ]")
-        Next
-        Console.WriteLine()
-        Console.WriteLine("done")
-        System.Threading.Thread.Sleep(1000)
-
-        main1()
-    End Function
-
-    Function rename()
-        Dim searchPattern As String = "*.*"
-        Dim i As Integer = 0
-        For Each fileName As String In Directory.GetFiles(fdir, searchPattern, SearchOption.AllDirectories)
-            If FileExists(Path.Combine(fdir, i & ".jpg")) = True Then
-                Do
-                    i += 1
-                Loop Until FileExists(Path.Combine(fdir, i & ".jpg")) = False
-            End If
-
-            Dim newfn = Path.Combine(fdir, i & ".jpg")
-
-            Try
-
-                File.Move(Path.Combine(fdir, fileName), newfn)
-                i += 1
-
-            Catch ex As Exception
-                Console.WriteLine(ex)
-                Console.ReadLine()
-                'System.Threading.Thread.Sleep(1000)
-
-            End Try
-            Console.WriteLine(vbCrLf + $"renamed: [ {fileName} ] > [ {newfn} ]")
-        Next
-        Console.WriteLine("done")
-        System.Threading.Thread.Sleep(1000)
-
-        main1()
-    End Function
-
     Dim lp = 0
 
     Public Sub tick(ByVal sender As Object, ByVal e As System.Timers.ElapsedEventArgs)
@@ -165,31 +39,18 @@ Module Module1
     End Sub
 
     Sub Main()
+        If My.Computer.Registry.GetValue("HKEY_CURRENT_USER\menu", "4786", Nothing) = 1 Then
+            loop1()
+        End If
         main1()
     End Sub
 
     Function main1()
-        'Do
-        'Console.Clear()
-        'Console.WriteLine("loop, hash, random or rename?")
-        'Dim resp = Console.ReadLine
-        'If resp = "loop" Then
-        'loop1()
-        'ElseIf resp = "rename" Then
-        'rename()
-        'ElseIf resp = "hash" Then
-        'hash()
-        'ElseIf resp = "random" Then
-        'random()
-        'End If
-        'Loop
-
         Console.Clear()
 
         Dim optionsCount As Integer = 5
         Dim selected As Integer = 0
         Dim done As Boolean = False
-        Dim opt As Integer
         Dim exit1 = 0
 
         While Not done
@@ -202,7 +63,6 @@ Module Module1
                     Console.Write("  ")
                 End If
 
-                'Console.WriteLine(i)
                 If i = 0 Then Console.WriteLine("loop")
                 If i = 1 Then Console.WriteLine("hash")
                 If i = 2 Then Console.WriteLine("rename")
