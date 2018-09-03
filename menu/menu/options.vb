@@ -8,7 +8,7 @@ Module options
 
     Function options1()
 
-        Dim optionsCount As Integer = 11
+        Dim optionsCount As Integer = 12
         Dim selected As Integer = 0
         Dim done As Boolean = False
         Console.CursorTop = 6
@@ -127,6 +127,16 @@ Module options
                     Console.WriteLine("open profilepic on startup")
                 End If
                 If i = 10 Then
+                    If c.selec8 Then
+                        Console.ForegroundColor = red
+                        Console.Write("[1] ")
+                    Else
+                        Console.ForegroundColor = gray
+                        Console.Write("[0] ")
+                    End If
+                    Console.WriteLine("profilepic notifications")
+                End If
+                If i = 11 Then
                     Console.ForegroundColor = gray
                     Console.WriteLine("    back")
                 End If
@@ -142,7 +152,7 @@ Module options
                     selected = Math.Min(optionsCount - 1, selected + 1)
 
                 Case ConsoleKey.Enter
-                    If selected = 10 Then
+                    If selected = 11 Then
                         menu1()
                     End If
 
@@ -217,6 +227,13 @@ Module options
                             c.file8 = True
                         End If
                     End If
+                    If selected = 10 Then
+                        If c.selec8 = False Then
+                            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\menu", 69860, 1)
+                            Beep(600, 2)
+                            c.selec8 = True
+                        End If
+                    End If
 
                 Case ConsoleKey.LeftArrow 'deactiv the function
                     If selected = 0 Then
@@ -287,6 +304,13 @@ Module options
                             My.Computer.Registry.SetValue("HKEY_CURRENT_USER\menu", 69859, 0)
                             Beep(400, 2)
                             c.file8 = False
+                        End If
+                    End If
+                    If selected = 10 Then
+                        If c.selec8 = True Then
+                            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\menu", 69860, 0)
+                            Beep(400, 2)
+                            c.selec8 = False
                         End If
                     End If
 

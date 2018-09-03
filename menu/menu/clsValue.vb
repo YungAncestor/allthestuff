@@ -16,7 +16,7 @@ Public Class clsValue
 
     Public selec6 As Boolean = False 'crpg loop option
     Public selec7 As Boolean = False 'profilepic loop option
-
+    Public selec8 As Boolean = False 'profilepic notifications on/off
 
 
     Public file1 As Boolean = False 'steam

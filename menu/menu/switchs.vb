@@ -8,6 +8,8 @@ Module switchs
 
     Function switchs1()
 
+        preload()
+
         Dim optionsCount As Integer = 6
         Dim selected As Integer = 0
         Dim done As Boolean = False

@@ -101,13 +101,12 @@ Module main
         ElseIf My.Computer.Registry.GetValue("HKEY_CURRENT_USER\menu", 4786, Nothing) = 1 Then
             c.selec7 = True
         End If
-
-
-        If startopen = True Then
-            menu1()
-        Else
-            start1()
+        If My.Computer.Registry.GetValue("HKEY_CURRENT_USER\menu", 69860, Nothing) Is Nothing Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\menu", 69860, 0)
+        ElseIf My.Computer.Registry.GetValue("HKEY_CURRENT_USER\menu", 69860, Nothing) = 1 Then
+            c.selec8 = True
         End If
+
 
     End Function
     '========================================================================================
@@ -164,7 +163,16 @@ Module main
 
 
     Sub Main()
+
+        'preload all the necessary shit from registry
         preload()
+
+        If startopen = True Then
+            menu1()
+        Else
+            start1()
+        End If
+
     End Sub
 
 

@@ -8,4 +8,3 @@ C:\Users\wallker\source\repos\profilepic\profilepic\obj\x64\Release\profilepic.v
 C:\Users\wallker\source\repos\profilepic\profilepic\obj\x64\Release\profilepic.exe
 C:\Users\wallker\source\repos\profilepic\profilepic\obj\x64\Release\profilepic.xml
 C:\Users\wallker\source\repos\profilepic\profilepic\obj\x64\Release\profilepic.pdb
-C:\Users\wallker\source\repos\profilepic\profilepic\obj\x64\Release\profilepic.vbprojResolveAssemblyReference.cache

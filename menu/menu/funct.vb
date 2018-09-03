@@ -166,7 +166,7 @@ Module funct
 
         s(600, 30, 3)
         write(“done..”, white, 30, 2)
-        functions1()
+        menu1()
 
     End Function
 

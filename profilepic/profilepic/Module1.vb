@@ -11,6 +11,8 @@ Imports System.String
 
 Module Module1
 
+    Public Declare Function Beep Lib "kernel32" (ByVal soundFrequency As Int32, ByVal soundDuration As Int32) As Int32
+
     Public fdir = "D:\Everything\new\"
 
     Function FileExists(FilePath As String) As Boolean
@@ -114,7 +116,12 @@ Module Module1
             Console.WriteLine($"file: [ {GetN(fdir)} ]")
             Console.WriteLine()
 
-            MsgBox("update your profile pic")
+
+            If My.Computer.Registry.GetValue("HKEY_CURRENT_USER\menu", 69860, Nothing) = 1 Then
+                MsgBox("update your profile pic")
+            Else
+                Beep(600, 2)
+            End If
 
             'System.Threading.Thread.Sleep(1000)
             System.Threading.Thread.Sleep(2700000)
